@@ -7,10 +7,55 @@
     <script src="script.js"></script>
     <title>Document</title>
   </head>
-  <body>
-    <h1>Auto Window Closer and Opener</h1>
-    <h2 id="Temperature">--</h2>
-    <h2 id="Humidity">--</h2>
-    <h2 id="Luminescence">--</h2>
-  </body>
-</html>
+  <style>
+    body {
+      background-color:#333333;
+    }
+    
+    h1 {
+      color: white;
+      margin-left: 40px;
+      font-size: 50px;
+      text-align: center;
+      
+      }
+    h2 {
+      margin-top: 25px;
+      color: white;
+      text-align: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 150px 150px 150px; 
+        grid-template-rows: 120px;
+        grid-column-gap: 300px;
+        margin-left: 420px;
+        }
+        
+    .box{
+		background: #89C5F9;
+     
+    }
+    
+    </style>
+    </head>
+    <body>
+        <h1>Auto Window Closer and Opener</h1>
+         <div class="container">
+        <div class="box">
+        <th>Temperature</th>
+        <h2 id="Temperature">--</h2>
+        </div>
+        
+        <div class="box">
+        <th>Humidity</th>
+        <h2 id="Humidity">--</h2>
+        </div>
+        
+        <div class="box">
+        <th>Luminescence</th>
+        <h2 id="Luminescence">--</h2>
+        </div>
+        </div>
+    </body>
+    </html>
